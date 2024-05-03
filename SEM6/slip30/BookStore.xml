@@ -1,0 +1,29 @@
+<?xml version = '1.0' encoding="UTF-8"?>
+
+<BookStore>
+
+<yoga>
+    <Book>
+        <Book_title>Importance of Yoga</Book_title>
+        <Book_Author>King Kohli</Book_Author>
+        <Book_price>9000</Book_price>
+    </Book>
+</yoga>
+
+<Story>
+    <Book>
+        <Book_title>Importance of Story</Book_title>
+        <Book_Author>King Kohli</Book_Author>
+        <Book_price>900</Book_price>
+    </Book>
+</Story>
+
+<Technical>
+    <Book>
+        <Book_title>Importance of Technical</Book_title>
+        <Book_Author>Code with Sarvesh</Book_Author>
+        <Book_price>0</Book_price>
+    </Book>
+</Technical>
+
+</BookStore>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Form</title>
+
+    <script>
+        function validateForm(){
+            let username = document.forms["myform"]["username"].value;
+            let password = document.forms["myform"]["password"].value;
+
+            if(username == ""){
+                alert("please fill the usename!");
+                return false;
+            }
+
+            if(password == ""){
+                alert("Plaese fill the password!");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h2>Form</h2>
+    <form action="membership.html" method="post"name="myform" >
+        <input type="text" name="username" id="username">
+        <input type="password" name="password" id="password">
+        <input type="submit" id="submit" onclick="return validateForm()">
+    </form>
+</body>
+</html>

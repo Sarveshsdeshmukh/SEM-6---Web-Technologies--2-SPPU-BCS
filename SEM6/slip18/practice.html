@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function generateFibonnanci(){
+            let inputNumber = document.getElementById('inputNumber').value;
+            let output = document.getElementById('output');
+
+            let n = parseInt(inputNumber)
+
+            let fib = [];
+
+            fib[0] = 0
+            fib[1] = 1
+
+            for(let i = 2 ; i <= n ; i++){
+                fib[i] = fib[i-1]+fib[i-2]
+            }
+
+            output.innerHTML = "The Fibonnanci sequence of "+n+":"+fib.join(",")
+        }
+    </script>
+</head>
+<body>
+    <h1>Fibonnanci Number</h1>
+    <input type="number" id="inputNumber">
+    <button onclick="generateFibonnanci()">Generate Fibonnanci</button>
+    <p id="output"></p>
+</body>
+</html>
